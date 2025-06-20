@@ -2,14 +2,14 @@
 # ACERCA DE
 # ---------
 # Frida
-# Version 0.1
+# Version 0.2
 
 # ------------
 # INTRODUCCIÓN
 # ------------
 # Frida se creó para calcular los objetivos de venta y ventas totales del día
-# de alguna sucursal de "ABARROTES FASTI". La finalidad es agilizar este
-# proceso, con ello se espera tener en tiempo y forma el reporte de ventas.
+# de una tienda de conveniencia. La finalidad es agilizar este proceso,
+# con ello se espera tener en tiempo y forma el reporte de ventas.
 #
 # La información ingresada y calculada, es y será tratada con responsabilidad
 # por quién ejecute este script.
@@ -20,7 +20,7 @@
 # EJECUCIÓN
 # ---------
 
-Write-Host "Frida (Version 0.1)"
+Write-Host "Frida (Version 0.2)"
 Write-Host ""
 
 Write-Host "RESULTADO DE VENTAS DEL DIA"
