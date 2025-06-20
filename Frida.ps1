@@ -89,7 +89,7 @@ Write-Host "| $(Get-Date -Uformat '%D %R')"
 Write-Host "|"; Write-Host "|"
 Write-Host "| MATUTINO"
 Write-Host "| Meta: $MetaVentaMatFormat"
-Write-Host "| Venta: $VentaMatFormat | " -NoNewLine
+Write-Host "| Venta: $VentaMatFormat ~ " -NoNewLine
 if ($VentaMat -ge $MetaVentaMat) {
 	Write-Host "$ResultadoMat%" -ForegroundColor Green
 } else {
@@ -98,7 +98,7 @@ if ($VentaMat -ge $MetaVentaMat) {
 Write-Host "|"; Write-Host "|"
 Write-Host "| VESPERTINO"
 Write-Host "| Meta: $MetaVentaVespFormat"
-Write-Host "| Venta: $VentaVespFormat | " -NoNewLine
+Write-Host "| Venta: $VentaVespFormat ~ " -NoNewLine
 if ($VentaVesp -ge $MetaVentaVesp) {
 	Write-Host "$ResultadoVesp%" -ForegroundColor Green
 } else {
@@ -107,7 +107,7 @@ if ($VentaVesp -ge $MetaVentaVesp) {
 Write-Host "|"; Write-Host "|"
 Write-Host "| TOTAL DEL DIA"
 Write-Host "| Meta: $MetaVentaFormat"
-Write-Host "| Venta: $VentaDiaFormat | " -NoNewLine
+Write-Host "| Venta: $VentaDiaFormat ~ " -NoNewLine
 if ($VentaDia -ge $MetaVentaDouble) {
 	Write-Host "$ResultadoDia%" -ForegroundColor Green
 } else {
