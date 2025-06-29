@@ -4,6 +4,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Hack Nerd Font";
+  src: url('fonts/Hack/HackNerdFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 * {
     margin: 0;
@@ -12,7 +19,8 @@
 }
 
 body {
-    font-family: monospace;
+    font-family: 'Hack Nerd Font', monospace;
+    font-size: 1.25rem;
 }
 
 #barra-titulo {
@@ -26,6 +34,6 @@ body {
 }
 #titulo {
     margin-left: 1rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-family: Corinthia, cursive;
 }
