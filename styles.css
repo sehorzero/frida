@@ -20,7 +20,7 @@
 
 body {
     font-family: 'Hack Nerd Font', monospace;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 
 #barra-titulo {
@@ -34,6 +34,14 @@ body {
 }
 #titulo {
     margin-left: 1rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: Corinthia, cursive;
+}
+
+#contenedor-principal {
+    padding: 1rem;
+}
+
+#numero-sucursal, #sel-reporte, #btn-inicio {
+    font-family: 'Hack Nerd Font', monospace
 }
