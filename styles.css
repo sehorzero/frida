@@ -4,13 +4,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "Hack Nerd Font";
-  src: url('fonts/Hack/HackNerdFont-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 * {
     margin: 0;
@@ -19,11 +12,19 @@
 }
 
 body {
-    font-family: 'Hack Nerd Font', monospace;
-    font-size: 1.1rem;
+    height: 100vh;
+
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
 }
 
-#barra-titulo {
+#contenedor-principal, #contenedor-mv, #contenedor-vd {
+    padding: 1rem;
+}
+
+#contenedor-titulo {
     background-color: black;
     color: white;
 
@@ -38,10 +39,12 @@ body {
     font-family: Corinthia, cursive;
 }
 
-#contenedor-principal {
+#contenedor-footbar {
+    margin-top: auto;
     padding: 1rem;
-}
 
-#numero-sucursal, #sel-reporte, #btn-inicio {
-    font-family: 'Hack Nerd Font', monospace
+    font-size: .75rem;
+
+    display: flex;
+    flex-direction: column;
 }

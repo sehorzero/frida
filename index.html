@@ -7,10 +7,64 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="barra-titulo">
+    <div id="contenedor-titulo">
         <p id="titulo">frida</p>
     </div>
-    <div id="contenedor-principal"></div>
+    <div id="contenedor-principal">
+        <p>Hola,</p>
+        <br>
+        <label for="numero-sucursal">Ingresa el número de sucursal:</label><br>
+        <input type="number" name="numero-sucursal" id="numero-sucursal">
+        <br>
+        <label for="sel-reporte">Selecciona el reporte:</label><br>
+        <select name="sel-reporte" id="sel-reporte">
+            <option value="1">Meta de Venta Vespertina</option>
+            <option value="2">Venta del Día</option>
+        </select>
+        <br><br>
+        <input type="button" value="Continuar" id="btn-inicio">
+    </div>
+    <div id="contenedor-mv" hidden>
+        <h3>Reporte: Meta de Venta Vespertina</h3>
+        <p id="mv-num-sucursal"></p>
+        <br>
+        <label for="mv-meta-venta">Ingresa la Meta de Venta:</label><br>
+        <input type="number" name="mv-meta-venta" id="mv-meta-venta">
+        <br>
+        <label for="mv-p1c1">Ingresa el Total del Parcial 1 Caja 1:</label><br>
+        <input type="number" name="mv-p1c1" id="mv-p1c1">
+        <br>
+        <label for="mv-p1c2">Ingresa el Total del Parcial 1 Caja 2:</label><br>
+        <input type="number" name="mv-p1c2" id="mv-p1c2">
+        <br><br>
+        <input type="button" value="Continuar" id="btn-mv">
+    </div>
+    <div id="contenedor-vd" hidden>
+        <h3>Reporte: Venta del Día</h3>
+        <br>
+        <label for="vd-meta-venta">Ingresa la Meta de Venta:</label><br>
+        <input type="number" name="vd-meta-venta" id="vd-meta-venta">
+        <br>
+        <label for="vd-p1c1">Ingresa el Total del Parcial 1 Caja 1:</label><br>
+        <input type="number" name="vd-p1c1" id="vd-p1c1">
+        <br>
+        <label for="vd-p1c2">Ingresa el Total del Parcial 1 Caja 2:</label><br>
+        <input type="number" name="vd-p1c2" id="vd-p1c2">
+        <br>
+        <label for="vd-p2c1">Ingresa el Total del Parcial 2 Caja 1:</label><br>
+        <input type="number" name="vd-p2c1" id="vd-p2c1">
+        <br>
+        <label for="vd-p2c2">Ingresa el Total del Parcial 2 Caja 2:</label><br>
+        <input type="number" name="vd-p2c2" id="vd-p2c2">
+        <br><br>
+        <input type="button" value="Continuar" id="btn-vd">
+    </div>
+    <div id="contenedor-opmv" hidden></div>
+    <div id="contenedor-opvm" hidden></div>
+    <div id="contenedor-footbar">
+        <p><a href="https://github.com/sehorzero/frida" target="_blank">Frida</a> 0.1</p>
+        <p>Creado por <a href="https://github.com/sehorzero" target="_blank">Volovan De Jamon</a></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
