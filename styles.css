@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Corinthia";
+  src: url('fonts/Corinthia/Corinthia-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,5 +19,13 @@ body {
     background-color: black;
     color: white;
 
-    padding: 1rem;
+    height: 4rem;
+
+    display: flex;
+    align-items: center;
+}
+#titulo {
+    margin-left: 1rem;
+    font-size: 3rem;
+    font-family: Corinthia, cursive;
 }
