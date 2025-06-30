@@ -20,7 +20,7 @@ body {
     flex-direction: column;
 }
 
-#contenedor-principal, #contenedor-mv, #contenedor-vd {
+#contenedor-principal, #contenedor-mv, #contenedor-vd, #contenedor-opmv, #contenedor-opvd {
     padding: 1rem;
 }
 
