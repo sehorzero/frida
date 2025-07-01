@@ -3,6 +3,8 @@ let contenedorMV = document.getElementById("contenedor-mv");
 let contenedorVD = document.getElementById("contenedor-vd");
 let contenedorOPMV = document.getElementById("contenedor-opmv");
 
+let textoOPMV = document.getElementById("texto-opmv");
+
 let btnInicio = document.getElementById("btn-inicio");
 let btnMV = document.getElementById("btn-mv");
 
@@ -28,20 +30,23 @@ btnInicio.addEventListener("click", () => {
                 if (mvMetaVenta > 0 && mvP1C1 > 0 && mvP1C2 > 0) {
                     contenedorMV.hidden = true;
                     contenedorOPMV.hidden = false;
-                    contenedorOPMV.innerHTML =
-                        `<p>Meta de Venta Vespertina, SF${numeroSucursal.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}</p>` +
-                        `<br>` +
-                        `<p>Meta del Día: ${mvMetaVenta.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}</p>` +
-                        `<br>` +
-                        `<p>MATUTINO</p>` +
-                        `<p>Meta: ${mvMetaMat.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}</p>` +
-                        `<p>Venta: ${mvVentaMat.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}</p>` +
-                        `<p>Logro: ${mvLogroMat}%</p>` +
-                        `<br>` +
-                        `<p>VESPERTINO</p>` +
-                        `<p>Meta: ${mvMetaVesp.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}</p>` +
-                        `<p>Carga Matutina: ${mvCargaMat.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}</p>` +
-                        `<p>Meta Real: ${mvMetaReal.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}</p>`
+                    textoOPMV.innerHTML =
+                        `Meta de Venta Vespertina, SF${numeroSucursal.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}` +
+                        `<br><br>Meta del Día: ${mvMetaVenta.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}` +
+                        `<br><br>MATUTINO` +
+                        `<br>Meta: ${mvMetaMat.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}` +
+                        `<br>Venta: ${mvVentaMat.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}` +
+                        `<br>Logro: ${mvLogroMat}%` +
+                        `<br><br>VESPERTINO` +
+                        `<br>Meta: ${mvMetaVesp.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}` +
+                        `<br>Carga Matutina: ${mvCargaMat.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}` +
+                        `<br>Meta Real: ${mvMetaReal.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })}`
+                    document.getElementById("link-whatsapp").addEventListener("click", function(e) {
+                        e.preventDefault();
+                        let textoConvertidoOPMV = textoOPMV.innerHTML.replace(/<br\s*\/?>/gi, "\n");
+                        let textoCodificadoOPMV = encodeURIComponent(textoConvertidoOPMV);
+                        window.location.href = "whatsapp://send?text=" + textoCodificadoOPMV;
+                    });
                 }
             });
         } else {
