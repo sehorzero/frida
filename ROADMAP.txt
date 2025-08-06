@@ -1,0 +1,31 @@
+NOTA:
+Predeterminadamente la Meta de Venta es calculada entre dos turnos.
+40% para matutino, 60% para vespertino.
+
+0.1: Generar el reporte de Meta del Día
+Calcula cuanto es que tiene que vender ambos turnos.
+ESTADO: [PENDIENTE] 
+
+0.2: Generar el reporte de Avance de Venta
+Reporta la venta del turno matutino.
+Calcula cuanto tendría que vender el turno vespertino para alcanzar la Meta del Día.
+ESTADO: [PENDIENTE]
+
+0.3: Generar el reporte de Venta del Día
+Reporta la venta de ambos turnos y calcula el porcentaje de éxito de la Meta del Día.
+ESTADO: [PENDIENTE]
+
+0.4: Poder modificar el porcentaje de venta de ambos turnos
+Esto para adaptarse a las necesidades de cada sucursal.
+ESTADO: [PENDIENTE]
+
+0.5: Poder agregar y calcular la venta nocturna
+Para que las sucursales con turno nucturno puedan hacer uso de esta herramienta.
+ESTADO: [PENDIENTE]
+
+0.6: Poder agregar productos con labor de venta al reporte de Venta del Día
+Por ejemplo, "Marias: Venta 3, Exst. 24".
+ESTADO: [PENDIENTE]
+
+1.0: Agregar un menú de inicio, botones de navegación y hacer una interfaz minimalista/intuitiva
+ESTADO: [PENDIENTE]
