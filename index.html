@@ -6,7 +6,13 @@
         <title>Frida</title>
     </head>
     <body>
-        <div id="contenedor-mv-entrada">
+        <div id="contenedor-indice">
+            <p id="mensaje-bienvenida">Hola 🙃</p>
+            <br>
+            <p>Escoge el reporte que quieras generar:</p>
+            <a href="" id="mv-indice">Meta de Venta</a>
+        </div>
+        <div id="contenedor-mv-entrada" hidden>
             <h1>Meta de Venta</h1>
             <p>Calcula cuánto se tiene que vender entre ambos turnos. Se basa también con la fecha del dispositivo, es importante comprobar que esté correcta.</p>
             <p id="mv-texto-advertencia">Llena todos los campos para continuar.</p>
@@ -24,7 +30,7 @@
             <br><br>
             <input type="button" name="mv-btn-continuar" id="mv-btn-continuar" value="Continuar">
         </div>
-        <div id="contenedor-mv-salida">
+        <div id="contenedor-mv-salida" hidden>
             <h1>Meta de Venta</h1>
             <h3 id="mv-numsucursal-salida"></h3>
             <p>Total:</p>
