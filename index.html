@@ -8,16 +8,19 @@
     <body>
         <div id="contenedor-mv-entrada">
             <h1>Meta de Venta</h1>
-            <p>Calcula la Meta de Venta repartida entre ambos turnos.</p>
-            <p>Llena todos los campos para continuar.</p>
-            <br>
-            <label for="mv-num-sucursal">Número de sucursal:</label>
+            <p>Calcula cuánto se tiene que vender entre ambos turnos. Se basa también con la fecha del dispositivo, es importante comprobar que esté correcta.</p>
+            <p id="mv-texto-advertencia">Llena todos los campos para continuar.</p>
+            <label for="mv-num-sucursal">Número de Sucursal:</label>
             <br>
             <input type="number" name="mv-num-sucursal" id="mv-num-sucursal">
             <br><br>
-            <label for="mv-meta">Objetivo de Venta:</label>
+            <label for="mv-presupuesto-venta">Presupuesto de Venta:</label>
             <br>
-            <input type="number" name="mv-meta" id="mv-meta">
+            <input type="number" name="mv-presupuesto-venta" id="mv-presupuesto-venta">
+            <br>
+            <label for="mv-acumulado-mensual">Acumulado Mensual:</label>
+            <br>
+            <input type="number" name="mv-acumulado-mensual" id="mv-acumulado-mensual">
             <br><br>
             <input type="button" name="mv-btn-continuar" id="mv-btn-continuar" value="Continuar">
         </div>
