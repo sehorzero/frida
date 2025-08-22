@@ -8,15 +8,14 @@
     <body>
         <div id="contenedor-indice">
             <p id="mensaje-bienvenida">Hola 🙃</p>
-            <br>
             <p>Escoge el reporte que quieras generar:</p>
-            <a href="" id="mv-indice">Meta de Venta</a>
+            <input type="button" name="mv-indice" id="mv-indice" value="Meta de Venta">
         </div>
         <div id="contenedor-mv-entrada" hidden>
             <h1>Meta de Venta</h1>
-            <p>Calcula cuánto se tiene que vender entre ambos turnos. Se basa también con la fecha del dispositivo, es importante comprobar que esté correcta.</p>
+            <p>Calcula cuánto se tiene que vender entre ambos turnos.</p>
             <p id="mv-texto-advertencia">Llena todos los campos para continuar.</p>
-            <label for="mv-numsucursal">Número de Sucursal:</label>
+            <label for="mv-num-sucursal">Número de Sucursal:</label>
             <br>
             <input type="number" name="mv-num-sucursal" id="mv-num-sucursal">
             <br><br>
@@ -39,5 +38,6 @@
             <p id="mv-hora-salida"></p>
             <input type="button" name="mv-btn-compartir" id="mv-btn-compartir" value="Compartir">
         </div>
+        <script src="main.js"></script>
     </body>
 </html>

@@ -4,7 +4,7 @@ Predeterminadamente la Meta de Venta es calculada entre dos turnos.
 
 0.1: Generar el reporte de Meta del Día
 Calcula cuanto es que tiene que vender ambos turnos.
-ESTADO: [PENDIENTE] 
+ESTADO: [PENDIENTE]
 
 0.2: Generar el reporte de Avance de Venta
 Reporta la venta del turno matutino.
