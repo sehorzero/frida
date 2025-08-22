@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frida</title>
+    </head>
+    <body>
+        <div id="contenedor-titulo">
+            <h1>Meta de Venta</h1>
+            <p>Calcula cuánto se tiene que vender entre ambos turnos.</p>
+        </div>
+        <div id="contenedor-entrada">
+            <h3>Ingreso de datos</h3>
+            <p id="texto-advertencia">Llena todos los campos para continuar.</p>
+            <label for="num-sucursal">Número de Sucursal:</label>
+            <br>
+            <input type="number" name="num-sucursal" id="num-sucursal">
+            <br><br>
+            <label for="presupuesto-venta">Presupuesto de Venta:</label>
+            <br>
+            <input type="number" name="presupuesto-venta" id="presupuesto-venta">
+            <br>
+            <label for="acumulado-mensual">Acumulado Mensual:</label>
+            <br>
+            <input type="number" name="acumulado-mensual" id="acumulado-mensual">
+            <br><br>
+            <input type="button" name="btn-continuar" id="btn-continuar" value="Continuar">
+        </div>
+        <div id="contenedor-salida" hidden>
+            <h3>Resultado</h3>
+            <p id="mv-total"></p>
+            <p id="mv-matutino"></p>
+            <p id="mv-vespertino"></p>
+            <input type="button" name="btn-compartir" id="btn-compartir" value="Compartir">
+        </div>
+        <script src="scripts/meta-venta.js"></script>
+    </body>
+</html>

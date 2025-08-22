@@ -7,37 +7,9 @@
     </head>
     <body>
         <div id="contenedor-indice">
-            <p id="mensaje-bienvenida">Hola 🙃</p>
+            <p id="mensaje-bienvenida"></p>
             <p>Escoge el reporte que quieras generar:</p>
-            <input type="button" name="mv-indice" id="mv-indice" value="Meta de Venta">
+            <a href="meta-venta.html">Meta de Venta</a>
         </div>
-        <div id="contenedor-mv-entrada" hidden>
-            <h1>Meta de Venta</h1>
-            <p>Calcula cuánto se tiene que vender entre ambos turnos.</p>
-            <p id="mv-texto-advertencia">Llena todos los campos para continuar.</p>
-            <label for="mv-num-sucursal">Número de Sucursal:</label>
-            <br>
-            <input type="number" name="mv-num-sucursal" id="mv-num-sucursal">
-            <br><br>
-            <label for="mv-presupuesto-venta">Presupuesto de Venta:</label>
-            <br>
-            <input type="number" name="mv-presupuesto-venta" id="mv-presupuesto-venta">
-            <br>
-            <label for="mv-acumulado-mensual">Acumulado Mensual:</label>
-            <br>
-            <input type="number" name="mv-acumulado-mensual" id="mv-acumulado-mensual">
-            <br><br>
-            <input type="button" name="mv-btn-continuar" id="mv-btn-continuar" value="Continuar">
-        </div>
-        <div id="contenedor-mv-salida" hidden>
-            <h1>Meta de Venta</h1>
-            <h3 id="mv-numsucursal-salida"></h3>
-            <p>Total:</p>
-            <p>Matutino:</p>
-            <p>Vespertino:</p>
-            <p id="mv-hora-salida"></p>
-            <input type="button" name="mv-btn-compartir" id="mv-btn-compartir" value="Compartir">
-        </div>
-        <script src="main.js"></script>
     </body>
 </html>
