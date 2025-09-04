@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frida</title>
+    </head>
+    <body>
+        <div id="cont-titulo">
+            <h1>Venta del Día</h1>
+        </div>
+        <div id="cont-entrada">
+            <p id="ce-desc">Llena los <i>campos obligatorios</i> para continuar</p>
+            <div id="ce-cont-numsuc">
+                <label for="cecn-ent">No. de Sucursal:</label>
+                <br>
+                <input type="number" id="cecn-ent" name="cecn-ent">
+            </div>
+            <div id="ce-cont-metaventa">
+                <p>Meta de Venta:</p>
+                <div id="cecm-cont-sel">
+                    <div id="cecmcs-ingr"><p>Ingresar</p></div>
+                    <div id="cecmcs-calc"><p>Calcular</p></div>
+                </div>
+                <div id="cecm-cont-ingr">
+                    <label for="cecmci-ent">Compromiso de Venta:</label>
+                    <br>
+                    <input type="number" id="cecmci-ent" name="cecmci-ent">
+                </div>
+                <div id="cecm-cont-calc">
+                    <p>Esto se calcula cuando "<i>DIF META Vs REAL</i>" tiene valor negativo</p>
+                    <label for="cecmcc-presventa">Presupuesto de Venta:</label>
+                    <br>
+                    <input type="number" id="cecmcc-presventa" name="cecmcc-presventa">
+                    <br><br>
+                    <label for="cecmcc-acumensual">Acumulado Mensual:</label>
+                    <br>
+                    <input type="number" id="cecmcc-acumensual" name="cecmcc-acumensual">
+                    <br><br>
+                    <label for="cecmcc-diasmes">Días Restantes del Mes:</label>
+                    <br>
+                    <input type="number" id="cecmcc-diasmes" name="cecmcc-diasmes">
+                    <br><br>
+                    <input type="checkbox" id="cecmcc-finsemana" name="cecmcc-finsemana">
+                    <label for="cecmcc-finsemana">Extra de Fin de Semana</label>
+                </div>
+                <div id="ce-cont-ventatotal">
+                    <p>Venta Total:</p>
+                    <label for="cecv-c1">Caja 1:</label>
+                    <br>
+                    <input type="number" id="cecv-c1" name="cecv-c1">
+                    <br><br>
+                    <label for="cecv-c2">Caja 2:</label>
+                    <br>
+                    <input type="number" id="cecv-c2" name="cecv-c2">
+                </div>
+                <div id="ce-cont-laborventa">
+                    <input type="checkbox" id="cecl-ent" name="cecl-ent">
+                    <label for="cecl-ent">Labor de Venta:</label>
+                    <br>
+                    <input type="number" id="cecl-ent" name="cecl-ent">
+                    <p>Ingresa cuantos impulsos se vendieron</p>
+                </div>
+                <div id="ce-cont-dezprod">
+                    <p>Desplazamiento de Productos:</p>
+                    <div class="cecd-cont-prod" id="cecd-prod1">
+                        <div class="cecdcp-btncerrar" id="cecdcp-btncerrar1"><p>x</p></div>
+                        <p>Producto 1</p>
+                        <label for="cecdcpp1-desc">Descripción:</label>
+                        <br>
+                        <input type="number" id="cecdcpp1-desc" name="cecdcpp1-desc">
+                        <br><br>
+                        <label for="cecdcpp1-ventas">Ventas:</label>
+                        <br>
+                        <input type="number" id="cecdcpp1-ventas" name="cecdcpp1-ventas">
+                        <br><br>
+                        <label for="cecdcpp1-exis">Existencia:</label>
+                        <br>
+                        <input type="number" id="cecdcpp1-exis" name="cecdcpp1-exis">
+                    </div>
+                    <div class="cecd-cont-prod" id="cecd-prod2">
+                        <div class="cecdcp-btncerrar" id="cecdcp-btncerrar2"><p>x</p></div>
+                        <p>Producto 2</p>
+                        <label for="cecdcpp2-desc">Descripción:</label>
+                        <br>
+                        <input type="number" id="cecdcpp2-desc" name="cecdcpp2-desc">
+                        <br><br>
+                        <label for="cecdcpp2-ventas">Ventas:</label>
+                        <br>
+                        <input type="number" id="cecdcpp2-ventas" name="cecdcpp2-ventas">
+                        <br><br>
+                        <label for="cecdcpp2-exis">Existencia:</label>
+                        <br>
+                        <input type="number" id="cecdcpp2-exis" name="cecdcpp2-exis">
+                    </div>
+                    <div class="cecd-cont-prod" id="cecd-prod3">
+                        <div class="cecdcp-btncerrar" id="cecdcp-btncerrar3"><p>x</p></div>
+                        <p>Producto 3</p>
+                        <label for="cecdcpp3-desc">Descripción:</label>
+                        <br>
+                        <input type="number" id="cecdcpp3-desc" name="cecdcpp3-desc">
+                        <br><br>
+                        <label for="cecdcpp3-ventas">Ventas:</label>
+                        <br>
+                        <input type="number" id="cecdcpp3-ventas" name="cecdcpp3-ventas">
+                        <br><br>
+                        <label for="cecdcpp3-exis">Existencia:</label>
+                        <br>
+                        <input type="number" id="cecdcpp3-exis" name="cecdcpp3-exis">
+                    </div>
+                    <div class="cecd-cont-prod" id="cecd-prod4">
+                        <div class="cecdcp-btncerrar" id="cecdcp-btncerrar4"><p>x</p></div>
+                        <p>Producto 4</p>
+                        <label for="cecdcpp4-desc">Descripción:</label>
+                        <br>
+                        <input type="number" id="cecdcpp4-desc" name="cecdcpp4-desc">
+                        <br><br>
+                        <label for="cecdcpp4-ventas">Ventas:</label>
+                        <br>
+                        <input type="number" id="cecdcpp4-ventas" name="cecdcpp4-ventas">
+                        <br><br>
+                        <label for="cecdcpp4-exis">Existencia:</label>
+                        <br>
+                        <input type="number" id="cecdcpp4-exis" name="cecdcpp4-exis">
+                    </div>
+                    <div class="cecd-cont-prod" id="cecd-prod5">
+                        <div class="cecdcp-btncerrar" id="cecdcp-btncerrar5"><p>x</p></div>
+                        <p>Producto 5</p>
+                        <label for="cecdcpp5-desc">Descripción:</label>
+                        <br>
+                        <input type="number" id="cecdcpp5-desc" name="cecdcpp5-desc">
+                        <br><br>
+                        <label for="cecdcpp5-ventas">Ventas:</label>
+                        <br>
+                        <input type="number" id="cecdcpp5-ventas" name="cecdcpp5-ventas">
+                        <br><br>
+                        <label for="cecdcpp5-exis">Existencia:</label>
+                        <br>
+                        <input type="number" id="cecdcpp5-exis" name="cecdcpp5-exis">
+                    </div>
+                    <div id="cecd-cont-agrprod">
+                        <div id="cecdca-btnagr"><p>+</p></div>
+                        <p>Agregar otro producto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cont-salida">
+        </div>
+    </body>
+</html>
